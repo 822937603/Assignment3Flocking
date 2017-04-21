@@ -5,9 +5,9 @@ using UnityEngine.AI;
 
 public class RightClicking : SelectionController {
 
-	public float distance = 5;
+	public float distance = 10;
 
-	private NavMeshAgent agent;
+	NavMeshAgent agent;
 	private Vector3 targetLocation = Vector3.zero;
 	private bool checkedselected = false;
 	private bool is_active = false;
