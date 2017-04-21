@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class FlockingController : MonoBehaviour {
 
-	public static FlockingController current;
+	public static FlockingController current = null;
 
 	public MeshCollider collider;
 
+	//checks where on the map was clicked
 	public Vector3? pointToMap(Vector2 point){
 		var ray = Camera.main.ScreenPointToRay (point);
 		RaycastHit gothit;
